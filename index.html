@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junior Montero | Desarrollo de Software ITLA</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Portfolio profesional de Junior Montero, graduado de desarrollo de software en el ITLA. Especialista en React, Node.js y soluciones full-stack modernas.">
+    <meta name="keywords"
+        content="Junior Montero, ITLA, Desarrollador Web, Software Developer, React, Node.js, Supabase, Dominicana">
+    <meta property="og:title" content="Junior Montero | Portfolio Profesional">
+    <meta property="og:description"
+        content="Explora los proyectos y habilidades de Junior Montero, experto en crear experiencias web excepcionales.">
+    <meta property="og:image" content="Images/banner-newportfolio.png">
+
+    <!-- Fonts & Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Fixed Background Image -->
+    <div class="fixed-background"></div>
+
+    <header class="navbar">
+        <div class="logo"><span>&lt;</span>Junior Montero <span>/&gt;</span></div>
+        
+        <nav class="nav-links">
+            <a href="#home">Inicio</a>
+            <a href="#about">Sobre Mí</a>
+            <a href="#skills">Habilidades</a>
+            <a href="#projects">Proyectos</a>
+            <a href="Cv/Maximo Montero CV .pdf" target="_blank" class="btn-contact" title="Ver CV">&lt;Descargar CV /&gt;</a>
+            <a href="#contact" class="btn-contact">&lt;Contactar /&gt;</a>
+        </nav>
+
+        <div class="nav-socials">
+            <a href="https://github.com/0xUnusual" target="_blank" title="GitHub"><img
+                    src="https://unpkg.com/grommet-icons/img/Github.svg" class="icon-nav" alt="GitHub"></a>
+            <a href="https://linkedin.com/in/junior-montero" target="_blank" title="LinkedIn"><img
+                    src="https://unpkg.com/grommet-icons/img/Linkedin.svg" class="icon-nav" alt="LinkedIn"></a>
+            
+            <!-- Hamburger Menu Button -->
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-content">
+                    <!-- Hero buttons removed -->
+                </div>
+        </section>
+
+        <!-- Infinite tech banner with GROMMET icons back -->
+        <div class="tech-banner-container">
+            <div class="tech-banner" id="tech-banner">
+                <!-- Tech items injected by JS -->
+            </div>
+        </div>
+
+        <!-- About section -->
+        <section id="about" class="about-section glass-panel">
+            <h2>Sobre Mí</h2>
+            <div class="about-content">
+                <p>Soy un profesional de 23 años enfocado en el desarrollo web. Me gradué del ITLA y he pasado mi tiempo
+                    de estudio dominando tecnologías modernas tanto en el frontend como en el backend.</p>
+                <p>Aunque aún estoy buscando mi primera oportunidad laboral formal, he dedicado innumerables horas a
+                    construir proyectos, desde el diseño base hasta el despliegue con Docker y GitHub. Disfruto creando
+                    interfaces hermosas e intuitivas, siempre manteniendo bases de código escalables y conectándolas con
+                    bases de datos como PostgreSQL y servicios como Supabase.</p>
+            </div>
+        </section>
+
+        <!-- Projects section -->
+        <section id="projects" class="projects-section">
+            <h2 class="section-title">Mis Proyectos</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <article class="project-card glass-panel-sm" data-tilt>
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800"
+                            alt="Plataforma E-Commerce" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="#" class="btn-icon">GitHub</a>
+                            <a href="#" class="btn-icon">Demo</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Plataforma E-Commerce</h3>
+                        <p>Desarrollo full-stack de una tienda en línea moderna usando Node.js, React y base de datos
+                            con Supabase.</p>
+                        <div class="tech-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>Supabase</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card glass-panel-sm" data-tilt>
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800"
+                            alt="Sistema de Gestión SaaS" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="#" class="btn-icon">GitHub</a>
+                            <a href="#" class="btn-icon">Demo</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Sistema de Gestión (SaaS)</h3>
+                        <p>Aplicación de gestión de inventarios y datos empresariales enfocada en la alta escalabilidad
+                            y el rendimiento.</p>
+                        <div class="tech-tags">
+                            <span>TypeScript</span>
+                            <span>PostgreSQL</span>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Formulario de contacto -->
+        <section id="contact" class="contact-section glass-panel reveal">
+            <h2>Hablemos</h2>
+            <p>¿Tienes una oportunidad laboral o un proyecto en mente? ¡Me encantaría sumarme a tu equipo!</p>
+            <form class="contact-form" id="contact-form">
+                <input type="text" id="name" name="name" placeholder="Tu Nombre Completo" required>
+                <input type="email" id="email" name="email" placeholder="Tu Correo Electrónico" required>
+                <textarea id="message" name="message" placeholder="Cuéntame sobre la oportunidad o proyecto..." rows="5"
+                    required></textarea>
+                <button type="submit" class="btn-primary" style="align-self: flex-start;">&lt;Enviar a WhatsApp /&gt;</button>
+            </form>
+        </section>
+
+    </main>
+
+
+
+    <!-- Libraries Loaded with Defer for Performance -->
+    <script src="https://unpkg.com/scrollreveal" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" defer></script>
+    <script src="js/app.js" defer></script>
+</body>
+
+</html>
